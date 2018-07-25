@@ -1,0 +1,15 @@
+{
+	"miniprogramRoot": "./dist",
+	"projectname": "taro-component-test",
+	"description": "Taro 组件化测试项目",
+	"appid": "touristappid",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"condition": {}
+}
