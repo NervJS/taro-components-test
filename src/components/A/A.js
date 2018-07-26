@@ -16,7 +16,7 @@ export default class A extends Component {
   componentWillReceiveProps (nextProps) {
     // console.log(this.props)
     // console.log(nextProps)
-    console.log('Component A will receive props, props.t:', this.props.t)
+    console.log('Component A will receive props:', this.props, nextProps)
   }
 
   componentWillUnmount () { }
