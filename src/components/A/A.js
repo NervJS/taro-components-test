@@ -5,18 +5,18 @@ import './A.scss'
 export default class A extends Component {
 
   componentWillMount () {
-    console.log('Component A will mount')
+    console.log('Component A will mount, props.t:', this.props.t)
   }
 
   componentDidMount () {
     console.log(this.props)
-    console.log('Component A did mount')
+    console.log('Component A did mount, props.t:', this.props.t)
   }
 
   componentWillReceiveProps (nextProps) {
     // console.log(this.props)
     // console.log(nextProps)
-    console.log('Component A will receive props')
+    console.log('Component A will receive props, props.t:', this.props.t)
   }
 
   componentWillUnmount () { }

@@ -33,7 +33,7 @@ class Index extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    console.log(this.props, nextProps)
+    console.log(this.props, nextProps, 'componentWillReceiveProps')
   }
 
   componentDidMount () {
@@ -61,10 +61,15 @@ class Index extends Component {
       title: `test A click ${item}`
     })
   }
-
+  handleToGoodList () {
+    Taro.navigateTo({
+      url: '/pages/goodList/index'
+    })
+  }
   render () {
     return (
       <View className='index'>
+        <View onClick={this.handleToGoodList}>点我去商品列表</View>
         {/* <Button className='add_btn' onClick={this.props.add}>+</Button>
         <Button className='dec_btn' onClick={this.props.dec}>-</Button>
         <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>

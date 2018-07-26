@@ -3,7 +3,7 @@ import '@tarojs/async-await'
 import { Provider } from '@tarojs/redux'
 
 import Index from './pages/index'
-
+import GoodList from './pages/goodList/index.js';
 import configStore from './store'
 
 import './app.scss'
@@ -13,7 +13,8 @@ const store = configStore()
 class App extends Component {
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/goodList/index'
     ],
     window: {
       backgroundTextStyle: 'light',
