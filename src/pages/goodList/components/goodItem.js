@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Input, Button, Image } from '@tarojs/components'
-
+import './gooditem.scss'
 export default class GoodItem extends Component {
   handleClick (tit) {
     console.log(tit)
