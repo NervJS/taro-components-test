@@ -14,6 +14,7 @@ class App extends Component {
   config = {
     pages: [
       'pages/index/index',
+      'pages/wxParse/wxParse',
       'pages/goodList/index'
     ],
     window: {

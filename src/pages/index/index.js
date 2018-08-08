@@ -90,6 +90,12 @@ class Index extends Component {
     })
   }
 
+  handleToWxParse () {
+    Taro.navigateTo({
+      url: '/pages/wxParse/wxParse'
+    })
+  }
+
   changeShow = () => {
     this.setState({
       isShowC: !this.state.isShowC
@@ -100,6 +106,7 @@ class Index extends Component {
     return (
       <View className='index'>
         <Button onClick={this.handleToGoodList}>点我去商品列表</Button>
+        <Button onClick={this.handleToWxParse}>点我去 WxParse 示例页面</Button>
         {/* <Button className='add_btn' onClick={this.props.add}>+</Button>
         <Button className='dec_btn' onClick={this.props.dec}>-</Button>
         <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
