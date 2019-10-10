@@ -220,10 +220,17 @@ function html2json(html, bindName) {
         },
         chars: function (text) {
             //debug(text);
+            var newText = unescape(
+                text
+                  .replace(/&#x/g, '%u')
+                  .replace(/\\u/g, '%u')
+                  .replace(/;/g, '')
+                  .replace(/%uA0/g, '&nbsp;')
+              )
             var node = {
                 node: 'text',
-                text: text,
-                textArray:transEmojiStr(text)
+                text: newText,
+                textArray:transEmojiStr(newText)
             };
             
             if (bufArray.length === 0) {
